@@ -23,7 +23,7 @@ NC='\033[0m'
 function download_node() {
   echo -e "Prepare to download ${GREEN}$COIN_NAME${NC}."
   cd $TMP_FOLDER >/dev/null 2>&1
-  wget -q COIN_TGZ
+  wget -q $COIN_TGZ
   compile_error
   unzip -x $COIN_ZIP >/dev/null 2>&1
   compile_error
