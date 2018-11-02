@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='beatcoin.conf'
-CONFIGFOLDER='/root/.beatcoin'
-COIN_DAEMON='beatcoind'
-COIN_CLI='beatcoin-cli'
+CONFIG_FILE='beatcrypto.conf'
+CONFIGFOLDER='/root/.beatcrypto'
+COIN_DAEMON='beatcryptod'
+COIN_CLI='beatcrypto-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/beatcrypto/beatcrypto/releases/download/v2.0/BEAT2-daemon.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Beatcoin'
-COIN_PORT=15678
-RPC_PORT=16789
+COIN_NAME='Beatcrypto'
+COIN_PORT=18898
+RPC_PORT=18899
 
 NODEIP=$(curl -s4 api.ipify.org)
 
